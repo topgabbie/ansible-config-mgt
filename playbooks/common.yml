@@ -26,7 +26,7 @@
 #         state: latest
 
 - name: create a file 
-  hosts: all
+  hosts: webservers
   become: yes
   tasks:
     -  name: create a file
