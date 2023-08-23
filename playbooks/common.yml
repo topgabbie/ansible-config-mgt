@@ -31,5 +31,5 @@
   tasks:
     -  name: create a file
        file: 
-       path: home
-       state: directory
+        path: home
+        state: directory
