@@ -1,22 +1,22 @@
 ---
-- name: Delete webservers, nfsservers
+- name: Uninstall wireshark from webservers, nfsservers
   hosts: webservers, nfs_servers
   remote_user: ec2-user
   become: yes
   become_user: root
   tasks:
-    - name: delete wireshark
+    - name: Uninstalling wireshark from webservers and nfsservers
       package:
         name: wireshark
         state: removed
         
-- name: Delete loadbalancer server
+- name: Uninstall wireshark from Loadbalancers and database servers
   hosts: lb, db
   remote_user: ubuntu
   become: yes
   become_user: root
   tasks:
-    - name: ensure wireshark is at the latest version
+    - name: Uninstalling wireshark from Loadbalancers and database servers
       package:
         name: wireshark-qt
         state: absent
