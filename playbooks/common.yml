@@ -20,7 +20,7 @@
       apt: 
         update_cache: yes
 
-    - name: ensure wireshark is at the latest version
+    - name: ensure wireshark is at the latest versions
       apt:
         name: wireshark
         state: latest
