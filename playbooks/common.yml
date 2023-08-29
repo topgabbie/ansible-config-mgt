@@ -24,8 +24,5 @@
       apt:
         name: wireshark
         state: latest
-    - name: create file
-      file:
-        path: /home
-        type: directory
+    
                 
