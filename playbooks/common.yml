@@ -9,8 +9,8 @@
       yum:
         name: wireshark
         state: latest
-
-- name: update Loadbalancer server
+        
+- name: update loadbalancer server
   hosts: lb, db
   remote_user: ubuntu
   become: yes
@@ -24,8 +24,5 @@
       apt:
         name: wireshark
         state: latest
-    - name: create file
-      file:
-        path: /home
-        type: directory
+    
                 
