@@ -9,7 +9,7 @@
       yum:
         name: wireshark
         state: latest
-
+        
 - name: update loadbalancer server
   hosts: lb, db
   remote_user: ubuntu
